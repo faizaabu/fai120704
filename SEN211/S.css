@@ -1,0 +1,154 @@
+*{
+   
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+     font-family: 'Poppins', sans-serif;
+
+}
+  .small-container{
+      max-width: 1500px;
+      margin: auto;
+      padding-left:25px;
+      padding-right:20px;
+}
+ .row{
+      display: flex;
+      align-items: center;
+      flex-wrapt: wrap;
+      justify-content: space-around;
+}
+.single-product{
+   margin-top: 80px
+}
+.small-img-row{
+   display: flex;
+   justify-content: space-around;
+}
+.col-2 img{
+   max-width: 200%;
+   padding: 50px 0;
+}
+.small-img-col{
+ flex-basis:24%;
+ cursor: pointer;
+}
+.single-product .col-2 img{
+  padding: 0;
+
+}
+.single-product .col-2{
+   padding: 20px;
+}
+.small-img-row{
+ display: flex;
+ justify-content: space-around;
+}
+.col-2 img{
+  max-width: 100%;
+  padding: 50px 0;
+}
+.small-img-col{
+  flex-basis: 24%;
+  cursor: pointer;
+}
+.single-product .col-2 img{
+ padding: 0;
+}
+.single-product .col-2 img{
+  padding: 20px;
+}
+.col-2{
+   flex-basis: 50%;
+   min-width: 300px;
+   
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20%;
+}
+.single-product h4{
+    margin: 20px 0;
+   font-size:22px;
+   font-weight:bold;
+ }
+.single product input{
+  width: 50px;
+  height: 50px;
+  padding-left: 10px;
+  font-size: 20px;
+  margin-right: 10px;
+  border: 1px solid #d24787;
+}
+.input:focus{
+  outline: none;
+}
+a{  
+    text-decoration: none;
+    color: #7f3667;
+}
+.single-product .fa{
+   color:#d24787;
+   margin-left: 10px;
+}
+p{
+   color: #7f3667;
+}
+.bnt{
+   display: inline-block;
+    background: #d24787;
+    color: #7f3667;
+    padding: 8px 30px;
+    margin: 30px;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.bnt:hover{
+   background: #FFOO7F;
+
+}
+
+
+nav{
+    background: #fff;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+}
+nav ul li{
+     list-style: none;
+     display: inline-block;
+     padding: 13px 34px;
+     margin: 10px;
+     font-size: 18px;
+     font-wieght: 500;
+     color:#777;
+     cursor: pointer;
+     position: relative;
+     z-index: 2;
+}
+nav ul li ::after{
+            content: '';
+            background:#f44566;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+}
+
+
+
+
