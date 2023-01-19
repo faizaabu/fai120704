@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	 <meta charset="UTF-8">
+  	 <meta name="viewport" content="width=device-width,initial-scale=2.0">
+  	 <link rel="stylesheet" href="S.css" class="css">
+  	 <title> products</title>
+
+ </head>
+ <style>
+
+        .container{
+          width: 80%;
+          display: flex;
+          margin-bottom: 20px;
+        }
+        #root{
+          width: 30%;
+          display: grid;
+          grid-template-columns:[left] 1fr [middlr] 1fr [middle1] 1fr [middle2] 1fr [right];
+          grid-gap: 20px;
+        }
+        .sidebar{
+          width: 30%;
+          border-radius: 5px;
+          margin-left: 20px;
+          padding: 20px;
+          text-align: center;
+        }
+        .box{
+          display: flex;
+          justify-content: space between;
+          padding: 20px;
+          border: 1px solid #aaa;
+          border-radius: 5px;
+        }
+        .img-box{
+          width: 20%;
+          height: 100px;
+          display: flex;
+          align-items:center;
+          justify-content: center;
+        }
+        .left{
+          width: 20%;
+          text-align: right;
+          display: flex;
+          flex-direction:column;
+          justify-content: space-evenly;
+          margin-left: 60px;
+        }
+        .img{
+          max-width: 90%;
+          max-height: 90%;
+          object-fit: cover;
+          object-position: center;
+
+        }
+        .button{
+          border: none;
+          border-radius: 5px;
+          background-color:pink ;
+          padding: 10px 25px;
+          cursor: pointer;
+          color: white;
+        }
+        
+ </style>
+ <body>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a><br></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="product.html">PRODUCTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+
+
+
+ 	 	<div class="small-container single-product">
+ 		<div class="row">
+	             <div class="col-2">
+ 				<img src="1.jpg" width="100%" id="productimg">
+ 		<div class="small-img-row">
+ 		
+    			<div class="small-img-col">
+    			<img src="8.jpg" width="100%" class="small-img">	
+    		
+    	   </div>
+    			<div class="small-img-col">
+    				<img src="iex.jpg" width="100%" class="small-img">
+
+    			</div>
+    				
+   
+    	         <div class="small-img-col">
+    				<img src="imags.jpg" width="100%" class="small-img">
+    			</div>
+
+
+    			<div class="small-img-col">
+    				<img src="iges.jpg" width="100%" class="small-img">
+    			</div>
+
+
+    			<div class="small-img-col">
+    				<img src="inex.jpg" width="200%" class="small-img">
+    			</div>
+    		</div>
+    	</div>
+    	<div class="col-2">
+    		<p>Bags</p>
+    		<h1>Bags by bella boutique</h1>
+    		<h4> $100</h4>
+    		<select>
+    			<option> select</option>
+    			<option> ash</option>
+    			<option> pink</option>
+    			<option> silver</option>
+    			<option>milk</option>
+    		</select>
+    		<input type="number" value="1">
+    		<a href=" "class="bnt"> Add to cart</a>
+
+    	
+
+    	</div>
+    </div>
+</div>
+
+  <script> 
+  	   var productimg = document.getElmentByID("productimg");
+  	   var small = Document.getElementByclassname("small-img");
+
+  	   smallImg[0].onclick = function()
+  	   {
+  	   	productImg.src = smallImg[0].src;
+  	   }
+  	   smallImg[1].onclick = function()
+  	   {
+  	   	productImg.src = smallImg[1].src;
+  	   }
+  	   smallImg[2].onclick = function()
+  	   {
+  	   	productImg.src = smallImg[2].src;
+  	   }
+  	   smallImg[3].onclick = function()
+  	   {
+  	   	productImg.src = smallImg[3].src;
+  	   }
+
+
+
+    
+  </script>
+
+      
+
+    <div class="container">
+      <div id="root"></div>
+      <div class="sidebar"></div>
+
+     <div class="box">
+      <div clas="img-box">
+        <img src="dx.jpg">
+
+      </div>
+         <div class="left">
+          <p>Bella shoe</p>
+          <h2>N39,999.00</h2>
+          <button>Buy</button>
+        </div>
+      </div>
+      
+      <div class="box">
+      <div clas="img-box">
+        <img src="dex.jpg">
+      </div>
+         <div class="left">
+          <p>Bella shoe</p>
+          <h2>N25,900.00</h2>
+          <button>Buy</button>
+        </div>
+      </div>
+      <br>
+            <div class="box">
+      <div clas="img-box">
+        <img src="e.jpg">
+      </div>
+         <div class="left">
+          <p>Bella jewelry</p>
+          <h2>$1000</h2>
+          <button>Buy</button>
+        </div>
+      </div>
+
+            <div class="box">
+      <div clas="img-box">
+        <img src="n.jpg">
+      </div>
+         <div class="left">
+          <p>Bella jewelry</p>
+          <h2>$50</h2>
+          <button>Buy</button>
+        </div>
+      </div>
+
+ </body>
+ </html>
